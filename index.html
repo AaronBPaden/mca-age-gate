@@ -9,6 +9,22 @@
         <title>Title</title>
     </head>
     <body>
+        <header class="header">
+            <h1>Age Tester</h1>
+        </header>
+        <main class="main">
+            <form id="ageForm" action="#link">
+                <p>Enter your date of birth:</p>
+                <input id="ageInput" type="date" name="ageInput" required>
+                <label for="confirmationInput">
+                    <input id="confirmationInput" type="checkbox" name="confirmationInput" required>
+                    The information is true and punishable by law if false.
+                </label>
+                <button class="btn btn-primary">Submit</button>
+            </form>
+            <div id="messageBox" class="message-box">
+            </div>
+        </main>
         <script src="js/jquery-3.6.0.min.js"></script>
         <script src="js/popper.min.js"></script>
         <script src="js/bootstrap.min.js"></script>

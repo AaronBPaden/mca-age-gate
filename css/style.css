@@ -1,0 +1,57 @@
+:root {
+	--primary: #d7d6d7;
+	--secondary: #c4c3c5;
+	--headerText: #4393db;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	background: var(--primary);
+}
+
+.header {
+	margin: 2rem;
+	text-align: center;
+	color: var(--headerText);
+}
+
+.main {
+	margin: auto;
+	width: 80%;
+}
+
+main > form {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 6px;
+	margin: auto;
+	padding: 1rem;
+	width: 50%;
+	border: 3px solid black;
+	border-radius: 4px;
+}
+
+.message-box {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+/* https://stackoverflow.com/a/16344389 */
+	animation: blinker 3s linear infinite;
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.success {
+	color: green;
+}
+
+.failure {
+	color: red;
+}
